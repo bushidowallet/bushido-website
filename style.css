@@ -1,0 +1,344 @@
+a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,ul,var
+{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-weight:inherit;
+    font-style:inherit;
+    font-family:inherit;
+    font-size:100%;
+    vertical-align:baseline
+}
+body
+{
+    line-height:1;
+    background:#fff
+}
+ol,ul
+{
+    list-style:none
+}
+table
+{
+    border-collapse:separate;
+    border-spacing:0;
+    vertical-align:middle
+}
+caption,td,th
+{
+    text-align:left;
+    font-weight:400;
+    vertical-align:middle
+}
+a img
+{
+    border:none
+}
+body,html
+{
+    font-family:'Gotham Rounded SSm A', 'Gotham Rounded SSm B';
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    background-color:#1b1b1b;
+    text-align:center;
+    overflow:auto;
+    height:100%;
+    color:#fff
+}
+*
+{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+a
+{
+    text-decoration:none
+}
+button,input
+{
+    font-family:'Gotham Rounded SSm A','Gotham Rounded SSm B';
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased
+}
+.container
+{
+    min-height:500px;
+    position:absolute;
+    overflow:hidden;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0
+}
+#canvas
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0
+}
+.message
+{
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    position:absolute;
+    padding:0 30px 30px;
+    width:100%;
+    left:50%;
+    top:50%
+}
+.logo
+{
+    text-transform:none;
+    letter-spacing:.08em;
+    font-weight:400;
+    font-size:2.875em
+}
+.logo img
+{
+    display:block;
+    opacity:.85;
+    -ms-filter:"alpha(Opacity=85)";
+    filter:alpha(opacity=85);
+    margin:0 auto 12px;height:80px
+}
+.logo em
+{
+    opacity:.6;
+    -ms-filter:"alpha(Opacity=60)";
+    filter:alpha(opacity=60)
+}
+.about
+{
+    text-transform:none;
+    line-height:1.5;
+    margin-top:30px;
+    font-size:1em
+}
+.about h2,.about p
+{
+    margin:12px 0
+}
+.about h2
+{
+    letter-spacing:-.025em;
+    font-weight:400;
+    font-size:1.4375em;
+    opacity:.9;
+    -ms-filter:"alpha(Opacity=90)";
+    filter:alpha(opacity=90)
+}
+.about p
+{
+    letter-spacing:-.0em;
+    font-weight:300;
+    font-size:.875em;
+    opacity:.8;
+    -ms-filter:"alpha(Opacity=80)";
+    filter:alpha(opacity=80);
+    margin:0 auto
+}
+#signup .status
+{
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    line-height:1.5em;
+    font-weight:300;
+    max-width:600px;
+    font-size:.75em;
+    /*display:block;*/
+    opacity:.6;
+    -ms-filter:"alpha(Opacity=60)";
+    filter:alpha(opacity=60);
+    margin:40px auto
+}
+#signup .status a
+{
+    font-weight:500;color:#fff
+}
+#signup .email, #signup .submit
+{
+    line-height:20px;
+    text-align:center;
+    /*display:block;*/
+    margin:0 auto;
+    width:200px
+}
+#signup .email
+{
+    -webkit-transition:background .33s cubic-bezier(0.23,1,.32,1), width .33s cubic-bezier(0.23,1,.32,1);
+    -moz-transition:background .33s cubic-bezier(0.23,1,.32,1),width .33s cubic-bezier(0.23,1,.32,1);
+    -o-transition:background .33s cubic-bezier(0.23,1,.32,1),width .33s cubic-bezier(0.23,1,.32,1);
+    -ms-transition:background .33s cubic-bezier(0.23,1,.32,1),width .33s cubic-bezier(0.23,1,.32,1);
+    transition:background .33s cubic-bezier(0.23,1,.32,1),width .33s cubic-bezier(0.23,1,.32,1);
+    margin-bottom:10px;background:rgba(0,0,0,.2);font-size:.875em;padding:15px 10px;
+    outline:0;border:none;color:#fff
+}
+#signup .email:focus
+{
+    background:rgba(0,0,0,.4);
+    width:280px
+}
+#signup .email::-webkit-input-placeholder
+{
+    text-transform:uppercase;
+    font-size:.9em;
+    color:rgba(255,255,255,.6)
+}
+#signup .email:-moz-placeholder
+{
+    text-transform:uppercase;
+    font-size:.9em;
+    color:rgba(255,255,255,.6)
+}
+#signup .email::-moz-placeholder
+{
+    text-transform:uppercase;
+    font-size:.9em;
+    color:rgba(255,255,255,.6)
+}
+#signup .email:-ms-input-placeholder
+{
+    text-transform:uppercase;
+    font-size:.9em;
+    color:rgba(255,255,255,.6)
+}
+#signup .submit
+{
+    -webkit-transition:background .33s cubic-bezier(0.23,1,.32,1);
+    -moz-transition:background .33s cubic-bezier(0.23,1,.32,1);
+    -o-transition:background .33s cubic-bezier(0.23,1,.32,1);
+    -ms-transition:background .33s cubic-bezier(0.23,1,.32,1);
+    transition:background .33s cubic-bezier(0.23,1,.32,1);
+    text-transform:uppercase;
+    background:0 0;
+    font-size:1em;
+    outline:0;
+    padding:15px 30px;
+    border:2px solid #fff;
+    cursor:pointer;
+    color:#fff
+}
+#signup .submit:hover
+{
+    background:rgba(255,255,255,.2)
+}
+.footer
+{
+    text-transform:none;
+    font-size:.6875em;
+    position:absolute;
+    bottom:20px;width:100%
+}
+.footer a
+{
+    -webkit-transition:opacity .33s cubic-bezier(0.23,1,.32,1);
+    -moz-transition:opacity .33s cubic-bezier(0.23,1,.32,1);
+    -o-transition:opacity .33s cubic-bezier(0.23,1,.32,1);
+    -ms-transition:opacity .33s cubic-bezier(0.23,1,.32,1);
+    transition:opacity .33s cubic-bezier(0.23,1,.32,1);
+    opacity:.7;
+    -ms-filter:"alpha(Opacity=25)";
+    filter:alpha(opacity=25);
+    padding:8px 10px;
+    color:#fff
+}
+.footer a:hover
+{
+    opacity:.8;
+    -ms-filter:"alpha(Opacity=80)";
+    filter:alpha(opacity=80)
+}
+@media screen and (max-width:320px)
+{
+    .container
+    {
+        min-height:380px
+    }
+    .logo
+    {
+        font-size:.625em
+    }
+    .logo img
+    {
+        height:50px
+    }
+    .about
+    {
+        margin-top:30px;
+        font-size:.6em
+    }
+    .about h2, .about p
+    {
+        margin:5px 0
+    }
+    .about p
+    {
+        font-size:.8em
+    }
+    #signup .status
+    {
+        letter-spacing:.05em;
+        font-size:.625em;
+        margin:20px 0
+    }
+    #signup .email, #signup .submit
+    {
+        font-size:.8em;
+        padding:8px 20px;
+        width:200px
+    }
+    .footer
+    {
+        font-size:.625em
+    }
+    .footer a
+    {
+        padding:8px 5px
+    }
+}
+@media screen and (min-width:321px) and (max-width:768px)
+{
+    .container
+    {
+        min-height:480px
+    }
+    .logo
+    {
+        font-size:.75em
+    }
+    .logo img
+    {
+        height:60px
+    }
+    .about
+    {
+        margin-top:40px;
+        font-size:.8em
+    }
+    .about p
+    {
+        font-size:.8em
+    }
+    #signup .status
+    {
+        letter-spacing:.05em;
+        font-size:.625em;
+        margin:30px 0
+    }
+    #signup .email, #signup .submit
+    {
+        font-size:.8em;
+        width:200px
+    }
+    .footer
+    {
+        font-size:.625em
+    }
+}

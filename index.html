@@ -1,76 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-language" content="en-GB">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="resource-type" content="document">
-    <meta name="description" content="bushidowallet.com - the way of the warrior bitcoin wallet">
-    <meta name="keywords" content="bitcoin api wallet">
-    <meta name="google-site-verification" content="j7H5g0AI9pyHsMOFXSGJIOT8v_LFYDUrV9eqA2ikS6o"/>
-    <meta name="globalsign-domain-verification" content="PEEWwC7fNbaZ4nYG_YeZygNy2dl3L-YbgJgd1A9XEn" />
+    <meta charset="UTF-8">
     <title>bushidowallet.com - the way of the warrior bitcoin wallet</title>
-    <link rel="stylesheet" type="text/css" href="fonts.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
-<body cz-shortcut-listen="true">
-<div class="container">
-    <canvas id="canvas" height="971" width="1920"></canvas>
-    <div class="message">
-        <h1 class="logo">
-            <p>bushido</p>
-        </h1>
-        <br/>
-        <div class="about">  
-            <p><b>Bushido Checkout</b> : Accept Bitcoin payments in store and save money on transaction fees</p>
-            <p><b>Bushido API</b> : Build applications involving monetary value movements easily, and spin off your business ideas around crypto currency</p>
-            <p><b>Bushido Management And Analytics</b> : Analyze your sites, applications or stores performance with a dedicated web application</p>
-            <p><b>Bushido Mobile</b> : Transfer funds in and out with a dedicated mobile application</p>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#desc">What is Bushido</a></li>
+                <li><a href="#diagram">Network diagram</a></li>
+                <li><a href="#stack">Software Stack</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="desc" style="background-color: lightblue">
+        <div class="part">
+            <div class="inside">
+                <div style="margin: 20px">
+                    Bushido is an Open Source initiative around Bitcoin security server-side. From the functional perspective it is an implementation of Bitcoin wallet, as defined in BIP32 spec. It consists of an Android wallet application, a web-application built with AngularJS, service implemented in Java and Spring Boot. The main goal of this project is to provide a Bitcoin hot-wallet framework with highest possible security. This goal has to be achieved thanks to partnering with Utimaco Gmbh - a worldwide supplier of professional cybersecurity solutions. Bushido is leveraging their CryptoServer product line in order to secure sensitive data and cryptographic operations.
+                </div>
+            </div>
         </div>
-	<div style="padding-top:8px">
-	    <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
-		<img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png"/>
-	    </a>
-	</div>
-        <div id="signup" style="padding-top:10px">
-		<button class="submit" onclick="signin()">Sign In</button>
-		<button class="submit" onclick="register()">Sign Up</button>		
+    </section>
+
+    <section id="diagram" style="background-color: white">
+        <div class="part">
+            <div class="inside">
+                <img width="60%" src="assets/network.svg">
+            </div>
         </div>
-	<div id="signup" style="padding-top:6px">
-		<button class="submit" onclick="followus()">Follow Us</button>
-		<button class="submit" onclick="emailus()">Email Us</button>
-	</div>
-        <div style="padding-top:20px"><img width="250" src="we-love-bitcoin.svg"></div>
-    </div>
-</div>
-<script>
-    var canvas = document.getElementById('canvas');
-    var context = canvas.getContext('2d');
-    var topgrad = context.createLinearGradient(0, 1920, 971, 0);
-    topgrad.addColorStop(0, 'rgba(153,218,255,1)');
-    topgrad.addColorStop(1, 'rgba(9,120,184,1)');
-    context.fillStyle = topgrad;
-    context.fillRect(0, 0, 1920, 971);
-    var grad = context.createLinearGradient(0, 1920, 918, 0);
-    grad.addColorStop(0, 'rgba(19,113,166,0)');
-    grad.addColorStop(0.62, 'rgba(19,113,166,1)');
-    grad.addColorStop(1, 'rgba(19,113,166,0)');
-    context.fillStyle = grad;
-    context.fillRect(0, 918, 1920, 54);
-    var followus = function() {
-        window.open('https://twitter.com/bushidowallet');
-    }
-    var emailus = function() {
-        window.open('mailto:bushido@riaforge.co.uk');
-    }
-    var signin = function() {
-        window.open('https://app.bushidowallet.com/login.html');
-    }
-    var register = function() {
-        window.open('https://app.bushidowallet.com/register.html');
-    }
-	
-</script>
+    </section>
+
+    <section id="stack" style="background-color: grey">
+        <div class="part">
+            <div class="inside">
+                MongoDB
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: lightblue; text-align: center">
+        <p>&copy; 2016 Riaforge. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>

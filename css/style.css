@@ -24,6 +24,11 @@ section {
 footer {
     float: left;
     width: 100%;
+    background: rgb(153,218,255); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(153,218,255) , rgb(9,120,184)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgb(153,218,255) , rgb(9,120,184)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgb(153,218,255) , rgb(9,120,184)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(153,218,255) , rgb(9,120,184)); /* Standard syntax */
 }
 
 section .part {

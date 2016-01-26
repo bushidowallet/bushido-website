@@ -5,77 +5,70 @@
     <title>bushidowallet.com - the way of the warrior bitcoin wallet</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
-<body>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#desc">What is Bushido</a></li>
-                <li><a href="#diagram">Network diagram</a></li>
-                <li><a href="#stack">Software Stack</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="desc" style="background-color: lightblue;">
-        <div class="part">
-            <div class="inside">
-                <div style="margin: 20px">
-                    Bushido is an Open Source initiative around Bitcoin security server-side. From the functional perspective it is an implementation of Bitcoin wallet, as defined in BIP32 spec. It consists of an Android wallet application, a web-application built with AngularJS, service implemented in Java and Spring Boot. The main goal of this project is to provide a Bitcoin hot-wallet framework with highest possible security. This goal has to be achieved thanks to partnering with Utimaco Gmbh - a worldwide supplier of professional cybersecurity solutions. Bushido is leveraging their CryptoServer product line in order to secure sensitive data and cryptographic operations.
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#desc">What is Bushido</a></li>
+                    <li><a href="#diagram">Network diagram</a></li>
+                    <li><a href="#stack">Software Stack</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="desc" style="background-color: lightblue;">
+            <canvas id="canvas" style="position:absolute; background-color: lightgrey"></canvas>
+            <div class="part">
+                <div class="inside">
+                    <div style="margin: 20px">
+                        Bushido is an Open Source initiative around Bitcoin security server-side. From the functional perspective it is an implementation of Bitcoin wallet, as defined in BIP32 spec. It consists of an Android wallet application, a web-application built with AngularJS, service implemented in Java and Spring Boot. The main goal of this project is to provide a Bitcoin hot-wallet framework with highest possible security. This goal has to be achieved thanks to partnering with Utimaco Gmbh - a worldwide supplier of professional cybersecurity solutions. Bushido is leveraging their CryptoServer product line in order to secure sensitive data and cryptographic operations.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="sponsorStripe">
-            <div style="width: 100%; display: table-cell; vertical-align: middle; background-color: white; text-align: center">
-                <a href="http://www.utimaco.com" target="_blank"><img src="assets/utimaco.png"/></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="diagram" style="background-color: white">
-        <div class="part">
-            <div class="inside">
-                <img width="80%" src="assets/network.svg">
-            </div>
-        </div>
-    </section>
-
-    <section id="stack" style="background-color: grey">
-        <div class="part">
-            <div class="inside" style="width: 80%">
-                <div class="row" style="height: 200px">
-                    <div class="gridBox col-2"><div class="gridBoxInner">Java</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">HTML</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">Docker</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">CSS</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">JavaScript</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">Utimaco CryptoServer</div></div>
-                </div>
-                <div class="row" style="height: 200px">
-                    <div class="gridBox col-2"><div class="gridBoxInner">Android</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">NodeJS</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">SSL</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">Bitcoin</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">MongoDB</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">RabbitMQ</div></div>
-                </div>
-                <div class="row" style="height: 200px">
-                    <div class="gridBox col-2"><div class="gridBoxInner">Nginx</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">Spring Boot</div></div>
-                    <div class="gridBox col-2"><div class="gridBoxInner">Angular JS</div></div>
-                    <!--
-                    <div class="col-2" style="background-color: #ffffff; height: 100%"></div>
-                    <div class="col-2" style="background-color: #ffffff; height: 100%"></div>
-                    <div class="col-2" style="background-color: #ffffff; height: 100%"></div>-->
+            <div class="sponsorStripe">
+                <div style="width: 100%; display: table-cell; vertical-align: middle; background-color: white; text-align: center">
+                    <a href="http://www.utimaco.com" target="_blank"><img src="assets/utimaco.png"/></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer style="background-color: lightblue; text-align: center">
-        <p>&copy; 2016 Riaforge. All rights reserved.</p>
-    </footer>
-
-</body>
-
+        </section>
+        <section id="diagram" style="background-color: white">
+            <div class="part">
+                <div class="inside">
+                    <img width="80%" src="assets/network.svg">
+                </div>
+            </div>
+        </section>
+        <section id="stack" style="background-color: grey">
+            <canvas id="canvas2" style="position:absolute; background-color: lightgrey"></canvas>
+            <div class="part">
+                <div class="inside" style="width: 80%">
+                    <div class="row" style="height: 200px">
+                        <div class="gridBox col-2"><div class="gridBoxInner">Java</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">HTML</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">Docker</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">CSS</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">JavaScript</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">Utimaco CryptoServer</div></div>
+                    </div>
+                    <div class="row" style="height: 200px">
+                        <div class="gridBox col-2"><div class="gridBoxInner">Android</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">NodeJS</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">SSL</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">Bitcoin</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">MongoDB</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">RabbitMQ</div></div>
+                    </div>
+                    <div class="row" style="height: 200px">
+                        <div class="gridBox col-2"><div class="gridBoxInner">Nginx</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">Spring Boot</div></div>
+                        <div class="gridBox col-2"><div class="gridBoxInner">Angular JS</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer style="text-align: center">
+            <p>&copy; 2016 Riaforge. All rights reserved.</p>
+        </footer>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
 </html>

@@ -82,3 +82,12 @@ section .part .inside {
     display: table-cell;
     vertical-align: middle;
 }
+
+.sponsorStripe {
+    background-color: #ffffff;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    position:absolute;
+    display: table;
+}

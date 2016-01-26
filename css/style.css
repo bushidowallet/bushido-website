@@ -2,15 +2,8 @@ body {
     margin: 0;
 }
 
-/*
 header {
-    left: 0;
-    float: left;
-    width: 100%;
-}*/
-
-header {
-    border-bottom: 1px solid #FF5714;
+    border-bottom: 1px solid #cacaca;
     left: 0;
     overflow: hidden;
     position: fixed;
@@ -27,6 +20,7 @@ section {
     float:left;
     height: 100vh;
 }
+
 footer {
     float: left;
     width: 100%;
@@ -58,6 +52,7 @@ section .part .inside {
  * {
      box-sizing:border-box;
  }
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -80,4 +75,10 @@ section .part .inside {
 .gridBox {
     background-color: #fafafa;
     height: 100%;
+    display: table;
+}
+
+.gridBoxInner {
+    display: table-cell;
+    vertical-align: middle;
 }

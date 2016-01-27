@@ -211,4 +211,6 @@ button,input
 
 .f {
     font-family: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
 }

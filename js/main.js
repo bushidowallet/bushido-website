@@ -1,12 +1,10 @@
 $(function() {
-
     init();
-
 });
 
 function init() {
-
     drawCanvas();
+    initNav();
 };
 
 function drawCanvas() {
@@ -32,3 +30,24 @@ function fillCanvas(canvas) {
     context.fillStyle = topgrad;
     context.fillRect(0, 0, canvas.width, canvas.height);
 }
+
+function initNav() {
+    $('#homeBtn').on('click', function(e) {
+        open('home');
+    });
+    $('#netBtn').on('click', function(e) {
+        open('diagram');
+    });
+    $('#stackBtn').on('click', function(e) {
+        open('stacks');
+    });
+}
+
+function open(id) {
+
+    var position = $('#'+id).position();
+    $('body, html').stop(true, false).animate({scrollTop: position.top}, 750, function() {
+
+    });
+}
+

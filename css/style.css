@@ -17,6 +17,10 @@ header {
     height: 100px;
 }
 
+a {
+    color: black;
+}
+
 section {
     height: 100%;
     width: 100%;
@@ -28,7 +32,7 @@ section {
 footer {
     float: left;
     width: 100%;
-    background: rgb(255,255,255);
+    background: rgb(202,202,202);
 }
 
 .about
@@ -107,6 +111,7 @@ section .part .inside {
     border: 0px solid #FFFFFF;
     color: #8b8583;
     text-align: center;
+    border: 1px solid rgb(255,255,255);
 }
 
 .sponsorStripe {
@@ -126,19 +131,80 @@ section .part .inside {
 
 }
 
-.btn
+.topBtn
 {
-    -webkit-transition:background .33s cubic-bezier(0.23,1,.32,1);
-    -moz-transition:background .33s cubic-bezier(0.23,1,.32,1);
-    -o-transition:background .33s cubic-bezier(0.23,1,.32,1);
-    -ms-transition:background .33s cubic-bezier(0.23,1,.32,1);
-    transition:background .33s cubic-bezier(0.23,1,.32,1);
+    position: relative;
+    -webkit-transition: color .5s linear, background-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out;
+    background:rgba(255,87,20,1);
+    background:0 0;
+    font-size:1em;
+    outline:0;
+    padding:15px 0px;
+    border:0px solid rgb(9,120,184);
+    cursor:pointer;
+    color:rgb(9,120,184);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.topBtn:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(9,120,184);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.topBtn:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.signBtn
+{
+    -webkit-transition: color .5s linear, background-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out;
+    background:rgba(255,87,20,1);
     text-transform:uppercase;
     background:0 0;
     font-size:1em;
     outline:0;
     padding:15px 30px;
-    border:2px solid #fff;
+    border:2px solid rgb(9,120,184);
     cursor:pointer;
-    color:#fff
+    color:rgb(9,120,184)
+}
+
+.signBtn:hover
+{
+    background:rgba(240,240,240,1);
+    -webkit-transition: color .5s linear, background-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out;
+}
+
+button,input
+{
+    font-family:'Gotham Rounded SSm A','Gotham Rounded SSm B';
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased
+}
+
+.logo {
+    font-size: 53px;
+    color: white;
 }

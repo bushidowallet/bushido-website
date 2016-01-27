@@ -208,3 +208,7 @@ button,input
     font-size: 53px;
     color: white;
 }
+
+.f {
+    font-family: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+}

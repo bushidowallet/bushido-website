@@ -49,6 +49,15 @@ function initNav() {
     $('#contributeBtn').on('click', function(e) {
         open('contribute');
     });
+    $('#contactBtn').on('click', function(e) {
+        open('contact');
+    });
+    $('#signupBtn').on('click', function(e) {
+        window.location = "https://app.bushidowallet.com/register.html";
+    });
+    $('#signinBtn').on('click', function(e) {
+        window.location = "https://app.bushidowallet.com/login.html";
+    });
     $('.slider').slick({
         autoplay: true,
         autoplaySpeed: 5000

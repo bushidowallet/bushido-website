@@ -10,8 +10,10 @@ function init() {
 function drawCanvas() {
     var canvas = document.getElementById('canvas');
     var canvas2 = document.getElementById('canvas2');
-    fillCanvas(canvas);
-    fillCanvas(canvas2);
+    var canvas3 = document.getElementById('canvas3');
+    fillCanvas(canvas, 'rgba(153,218,255,1)', 'rgba(9,120,184,1)');
+    fillCanvas(canvas2, 'rgba(153,218,255,1)', 'rgba(9,120,184,1)');
+    fillCanvas(canvas3, 'rgba(142,166,4,1)', 'rgba(86,166,4,1)');
 }
 
 function fitToContainer(canvas) {
@@ -21,12 +23,12 @@ function fitToContainer(canvas) {
     canvas.height = canvas.offsetHeight;
 }
 
-function fillCanvas(canvas) {
+function fillCanvas(canvas, c1, c2) {
     var context = canvas.getContext('2d');
     fitToContainer(canvas);
     var topgrad = context.createLinearGradient(0, canvas.width, canvas.height, 0);
-    topgrad.addColorStop(0, 'rgba(153,218,255,1)');
-    topgrad.addColorStop(1, 'rgba(9,120,184,1)');
+    topgrad.addColorStop(0, c1);
+    topgrad.addColorStop(1, c2);
     context.fillStyle = topgrad;
     context.fillRect(0, 0, canvas.width, canvas.height);
 }
@@ -40,6 +42,16 @@ function initNav() {
     });
     $('#stackBtn').on('click', function(e) {
         open('stacks');
+    });
+    $('#galleryBtn').on('click', function(e) {
+        open('gallery');
+    });
+    $('#contributeBtn').on('click', function(e) {
+        open('contribute');
+    });
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000
     });
 }
 

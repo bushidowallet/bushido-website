@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link ref="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
     <body>
         <header>
@@ -14,6 +16,8 @@
                     <button id="homeBtn" class="topBtn" style="margin-right: 0px">Home</button>
                     <button id="netBtn" class="topBtn" style="margin-right: 0px">Network Diagram</button>
                     <button id="stackBtn" class="topBtn">Technology Stack</button>
+                    <button id="galleryBtn" class="topBtn">Gallery</button>
+                    <button id="contributeBtn" class="topBtn">Contribute</button>
                     <button id="signupBtn" class="signBtn">Sign Up</button>
                     <button id="signinBtn" class="signBtn">Sign In</button>
                 </div>
@@ -21,14 +25,14 @@
         </header>
         <section id="home">
             <canvas id="canvas" style="position:absolute; background-color: lightgrey"></canvas>
-            <div class="part">
+            <div class="part" style="padding-top: 0px">
                 <div class="inside">
                     <span class="logo">bushido</span>
                     <p style="color: white; padding-top: 0px">Open Source initiative around Bitcoin security server side.</p>
                 </div>
             </div>
             <div class="sponsorStripe">
-                <p class="f" style="color:white; position:absolute; top: -37px; left: 20px">VISIT OUR SPONSORS</p>
+                <p class="f" style="color:white; position:absolute; top: -33px; left: 20px">VISIT OUR SPONSORS</p>
                 <div style="width: 100%; display: table-cell; vertical-align: middle; background-color: white; text-align: center">
                     <a href="http://www.utimaco.com" target="_blank"><img width="150px" src="assets/utimaco.png"/></a>
                 </div>
@@ -65,10 +69,34 @@
                 </div>
             </div>
         </section>
+        <section id="gallery" style="background-color: white; display: table; padding: 50px">
+            <!--
+            <div class="slider" style="ibackground-color: lightgrey">
+                <div>1</div>
+                <div>2</div>
+            </div>-->
+        </section>
+        <section id="contribute">
+            <canvas id="canvas3" style="position:absolute; background-color: lightgrey"></canvas>
+            <div class="part">
+                <div class="inside">
+                    <p style="color: white">Bushido is open source. Check it on Github.</p>
+                    <p>
+                        <a class="nav-btn" href="http://github.com/bushidowallet" target="_blank" title="Source code at GitHub">View the source code<i class="icon-link"></i></a>
+                        <a class="nav-btn" href="https://github.com/bushidowallet/bushido-doc" target="_blank" title="Setting up development environment">Set up development environment<i class="icon-link"></i></a>
+                    </p>
+                </div>
+            </div>
+        </section>
         <footer style="text-align: center">
-            <p style="font-size: 12px">maintained by <a href="http://www.robertjesionek.com" target="_blank">Robert Jesionek</a></p>
+            <p style="font-size: 12px">
+                Contact: <a class="nav-btn" style="color: black; padding-left: 5px;" href="mailto:bushido@riaforge.co.uk">bushido@riaforge.co.uk<i class="icon-link-black" style="color:black"></i></a>
+                <span style="padding-left: 60px">Maintained by</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://www.robertjesionek.com" target="_blank">Robert Jesionek<i class="icon-link-black" style="color:black"></i></a>
+                <span style="padding-left: 60px">Twitter</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://twitter.com/bushidowallet" target="_blank">@bushidowallet<i class="icon-link-black" style="color:black"></i></a>
+            </p>
         </footer>
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

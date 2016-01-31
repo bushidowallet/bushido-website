@@ -11,9 +11,11 @@ function drawCanvas() {
     var canvas = document.getElementById('canvas');
     var canvas2 = document.getElementById('canvas2');
     var canvas3 = document.getElementById('canvas3');
+    var canvas4 = document.getElementById('canvas4');
     fillCanvas(canvas, 'rgba(153,218,255,1)', 'rgba(9,120,184,1)');
     fillCanvas(canvas2, 'rgba(153,218,255,1)', 'rgba(9,120,184,1)');
     fillCanvas(canvas3, 'rgba(142,166,4,1)', 'rgba(86,166,4,1)');
+    fillCanvas(canvas4, 'rgba(220,220,221,1)', 'rgba(159,157,160,1)');
 }
 
 function fitToContainer(canvas) {

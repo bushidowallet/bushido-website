@@ -1,0 +1,56 @@
+.sliderContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    height: 500px; border: 0px solid #8b8583;
+    pointer-events: none;
+}
+
+.slide:hover {
+
+}
+
+.sliderIntro {
+    width: 600px;
+}
+
+.sliderIntro p {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.sliderImg {
+    height: 100%;
+}
+
+.openWebsite {
+    pointer-events: auto; margin-left: 20px; width: 100px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 699px) and (min-width: 250px) {
+
+    .sliderIntro {
+        width: 300px;
+    }
+
+    .sliderImg {
+        width: 250px;
+        height: auto;
+    }
+
+    .sliderIntro p {
+        font-size: 12px;
+    }
+
+    .slide {
+        margin-top: 20px;
+        height: 480px; border: 0px solid #8b8583;
+        pointer-events: none;
+    }
+}

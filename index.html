@@ -1,76 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-language" content="en-GB">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="resource-type" content="document">
-    <meta name="description" content="bushidowallet.com - the way of the warrior bitcoin wallet">
-    <meta name="keywords" content="bitcoin api wallet">
-    <meta name="google-site-verification" content="j7H5g0AI9pyHsMOFXSGJIOT8v_LFYDUrV9eqA2ikS6o"/>
-    <meta name="globalsign-domain-verification" content="PEEWwC7fNbaZ4nYG_YeZygNy2dl3L-YbgJgd1A9XEn" />
-    <title>bushidowallet.com - the way of the warrior bitcoin wallet</title>
-    <link rel="stylesheet" type="text/css" href="fonts.css">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>bushidowallet.com - open source initiative around Bitcoin security server side.</title>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link ref="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slider.css"/>
 </head>
-<body cz-shortcut-listen="true">
-<div class="container">
-    <canvas id="canvas" height="971" width="1920"></canvas>
-    <div class="message">
-        <h1 class="logo">
-            <p>bushido</p>
-        </h1>
-        <br/>
-        <div class="about">  
-            <p><b>Bushido Checkout</b> : Accept Bitcoin payments in store and save money on transaction fees</p>
-            <p><b>Bushido API</b> : Build applications involving monetary value movements easily, and spin off your business ideas around crypto currency</p>
-            <p><b>Bushido Management And Analytics</b> : Analyze your sites, applications or stores performance with a dedicated web application</p>
-            <p><b>Bushido Mobile</b> : Transfer funds in and out with a dedicated mobile application</p>
-        </div>
-	<div style="padding-top:8px">
-	    <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
-		<img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png"/>
-	    </a>
-	</div>
-        <div id="signup" style="padding-top:10px">
-		<button class="submit" onclick="signin()">Sign In</button>
-		<button class="submit" onclick="register()">Sign Up</button>		
-        </div>
-	<div id="signup" style="padding-top:6px">
-		<button class="submit" onclick="followus()">Follow Us</button>
-		<button class="submit" onclick="emailus()">Email Us</button>
-	</div>
-        <div style="padding-top:20px"><img width="250" src="we-love-bitcoin.svg"></div>
-    </div>
-</div>
-<script>
-    var canvas = document.getElementById('canvas');
-    var context = canvas.getContext('2d');
-    var topgrad = context.createLinearGradient(0, 1920, 971, 0);
-    topgrad.addColorStop(0, 'rgba(153,218,255,1)');
-    topgrad.addColorStop(1, 'rgba(9,120,184,1)');
-    context.fillStyle = topgrad;
-    context.fillRect(0, 0, 1920, 971);
-    var grad = context.createLinearGradient(0, 1920, 918, 0);
-    grad.addColorStop(0, 'rgba(19,113,166,0)');
-    grad.addColorStop(0.62, 'rgba(19,113,166,1)');
-    grad.addColorStop(1, 'rgba(19,113,166,0)');
-    context.fillStyle = grad;
-    context.fillRect(0, 918, 1920, 54);
-    var followus = function() {
-        window.open('https://twitter.com/bushidowallet');
-    }
-    var emailus = function() {
-        window.open('mailto:bushido@riaforge.co.uk');
-    }
-    var signin = function() {
-        window.open('https://app.bushidowallet.com/login.html');
-    }
-    var register = function() {
-        window.open('https://app.bushidowallet.com/register.html');
-    }
-	
-</script>
-</body>
+    <body>
+    <a target="_blank" href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; left: 0; top:0; z-index: 9000" src="assets/we-are-reactive-orange-left.png"> </a>
+        <header>
+            <div style="display: table; width: 100%; height: 100%; padding-right: 20px">
+                <div class="topNavBar">
+                    <button id="homeBtn" class="topBtn" style="margin-right: 0px">Home</button>
+                    <button id="netBtn" class="topBtn" style="margin-right: 0px">Network Diagram</button>
+                    <button id="hsmBtn" class="topBtn">HSM</button>
+                    <button id="stackBtn" class="topBtn">Technology</button>
+                    <button id="galleryBtn" class="topBtn">Screenshots</button>
+                    <button id="contributeBtn" class="topBtn">Contribute</button>
+                    <button id="contactBtn" class="topBtn">Contact</button>
+                    <button id="signupBtn" class="signBtn">Sign Up</button>
+                    <button id="signinBtn" class="signBtn">Sign In</button>
+                </div>
+            </div>
+        </header>
+        <section id="home">
+            <canvas id="canvas" style="position:absolute; background-color: lightgrey"></canvas>
+            <div class="part" style="padding-top: 0px">
+                <div class="inside">
+                    <span class="logo">bushido</span>
+                    <p style="color: white; padding-top: 0px">Open Source initiative around Bitcoin security server side.</p>
+                    <div style="padding-top:20px">
+                        <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
+                            <img alt="Android app on Google Play" width="150px" src="assets/goog.png"/>
+                        </a>
+                    </div>
+                    <p style="color:#ffffff; padding-top: 20px">Web & Mobile Wallet &#183 BIP32 Hierarchical Deterministic &#183 HSM Security &#183 Developer API</p>
+                </div>
+            </div>
+            <div class="sponsorStripe">
+                <p class="f" style="color:white; position:absolute; top: -33px; left: 20px">VISIT SUPPORTERS</p>
+                <div style="width: 100%; display: table-cell; vertical-align: middle; background-color: white; text-align: center">
+                    <a href="http://www.utimaco.com" target="_blank"><img width="150px" src="assets/utimaco.png"/></a>
+                </div>
+            </div>
+        </section>
+        <section id="diagram" style="background-color: white">
+            <div class="part">
+                <div class="inside">
+                    <img id="diagramSvg" class="diagram" src="assets/network.svg">
+                </div>
+            </div>
+        </section>
+        <section id="hsm" style="background-color: #ffffff">
+            <div class="part">
+                <div class="inside">
+                    <img class="cryptoserver" src="assets/cryptoserver.png"/>
+                </div>
+            </div>
+        </section>
+        <section id="stacks" style="background-color: grey">
+            <canvas id="canvas2" style="position:absolute; background-color: lightgrey"></canvas>
+            <div class="part">
+                <div class="inside">
+                    <div class="techBox">
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 10px; max-width: 100%; max-height: 100%" src="assets/java.png"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">HTML</div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/docker.png"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">CSS</div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/js.png"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Utimaco CryptoServer</div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/android.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/nodejs.png"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">SSL</div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Bitcoin</div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/mongodb.png"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 20px; max-width: 100%; max-height: 100%" src="assets/rabbitmq.png"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/nginx.png"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Spring Boot</div></div>
+                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff;background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/angularjs.png"/></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" style="background-color: white;">
+            <canvas id="canvas4" style="position:absolute; background-color: lightgrey"></canvas>
+            <div id="wrapper" style="padding-top: 100px; height: 100%; width: 100%; overflow: auto; -webkit-overflow-scrolling: touch;">
+                <div class="sliderContainer">
+                    <div id="innerContainer">
+                        <div class="slide" onfocus="this.blur();" id="slide2"><img class="sliderImg" src="assets/bushido/bushido_mobile.png"/></div>
+                        <div class="slide" onfocus="this.blur();" id="slide3"><img class="sliderImg" src="assets/bushido/receive.png"/></div>
+                        <div class="slide" onfocus="this.blur();" id="slide4"><img class="sliderImg" src="assets/bushido/keys.png"/></div>
+                        <div class="slide" onfocus="this.blur();" id="slide5"><img class="sliderImg" src="assets/bushido/wallet.png"/></div>
+                        <div class="slide" onfocus="this.blur();" id="slide6"><img class="sliderImg" src="assets/bushido/checkout_keypad_cropped.png"/></div>
+                        <div class="slide" onfocus="this.blur();" id="slide7"><img class="sliderImg" src="assets/bushido/checkout_awaiting_cropped.png"/></div>
+                        <div class="slide" onfocus="this.blur();" id="slide8"><img class="sliderImg" src="assets/bushido/analytics.png"/></div>
+                        <div class="slide" onfocus="this.blur();" id="slide10"><img class="sliderImg" src="assets/bushido/bushido_checkout.jpg"/></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contribute">
+            <canvas id="canvas3" style="position:absolute; background-color: lightgrey"></canvas>
+            <div class="part">
+                <div class="inside">
+                    <p style="color: white">Bushido is open source. Contributors are welcome.</p>
+                    <p>
+                        <a class="nav-btn" style="padding-bottom: 0px" href="http://github.com/bushidowallet" target="_blank" title="Source code at GitHub">View the source code<i class="icon-link"></i></a></br>
+                        <a class="nav-btn" style="padding-bottom: 0px" href="https://github.com/bushidowallet/bushido-doc" target="_blank" title="Setting up development environment">Set up development environment<i class="icon-link"></i></a></br>
+                        <a class="nav-btn" style="padding-bottom: 0px" href="https://gitter.im/bushidowallet/bushido-doc" target="_blank" title="Chat on Gitter">Chat on Gitter<i class="icon-link"></i></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer id="contact" style="text-align: center">
+            <p style="font-size: 12px">
+                Contact: <span class="nav-btn" style="color: black; padding-left: 5px;">bushido at riaforge.co.uk</span>
+                <span style="padding-left: 60px">Maintained by</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://www.robertjesionek.com" target="_blank">Robert Jesionek<i class="icon-link-black" style="color:black"></i></a>
+                <span style="padding-left: 60px">Twitter</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://twitter.com/bushidowallet" target="_blank">@bushidowallet<i class="icon-link-black" style="color:black"></i></a>
+            </p>
+        </footer>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
 </html>

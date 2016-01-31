@@ -1,0 +1,432 @@
+body, html {
+    margin: 0;
+    font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    border-bottom: 1px solid #cacaca;
+    right: 0;
+    overflow: hidden;
+    position: fixed;
+    vertical-align: bottom;
+    width: 100%;
+    z-index: 9;
+    background-color: #cacaca;
+    height: 100px;
+}
+
+a {
+    color: black;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    float:left;
+    height: 100vh;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    background: rgb(202,202,202);
+}
+
+.about
+{
+    text-transform:none;
+    line-height:1.5;
+    margin-top:30px;
+    font-size:1em;
+}
+
+section .part {
+    float: left;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
+section .part::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    margin-right: -0.25em;
+    vertical-align: middle;
+}
+
+section .part .inside {
+    display: inline-block;
+    margin: 0 auto;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+ * {
+     box-sizing:border-box;
+ }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid white;
+}
+
+.diagram {
+    width: 80%;
+}
+
+.sponsorStripe {
+    background-color: #ffffff;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    position:absolute;
+    display: table;
+}
+
+.topNavBar {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+
+}
+
+.topBtn
+{
+    position: relative;
+    -webkit-transition: color .5s linear, background-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out;
+    background:rgba(255,87,20,1);
+    background:0 0;
+    font-size:1em;
+    outline:0;
+    padding:15px 0px;
+    border:0px solid rgb(9,120,184);
+    cursor:pointer;
+    color:rgb(9,120,184);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.topBtn:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(9,120,184);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.topBtn:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.signBtn
+{
+    -webkit-transition: color .5s linear, background-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out;
+    background:rgba(255,87,20,1);
+    text-transform:uppercase;
+    background:0 0;
+    font-size:1em;
+    outline:0;
+    padding:15px 30px;
+    border:2px solid rgb(9,120,184);
+    cursor:pointer;
+    color:rgb(9,120,184)
+}
+
+.signBtn:hover
+{
+    background:rgba(240,240,240,1);
+    -webkit-transition: color .5s linear, background-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out;
+}
+
+button,input
+{
+    font-family:'Gotham Rounded SSm A','Gotham Rounded SSm B';
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased
+}
+
+.logo {
+    font-size: 53px;
+    color: white;
+}
+
+.f {
+    font-family: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+.slider {
+    width: 250px;
+    height: 150px;
+    border: 0px solid #8b8583;
+    border-radius: 5px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, .99);
+    text-decoration: none;
+}
+
+.nav-btn {
+    color: #fff;
+    opacity: .5;
+    text-decoration: none;
+    font-size: 1.25em;
+    display: inline-block;
+    padding: 20px 0 20px 20px;
+    position: relative;
+}
+
+.nav-btn:hover {
+    opacity: 1;
+}
+
+.nav-btn--highlight {
+    opacity: 1;
+}
+
+.nav-btn--highlight:hover {
+
+}
+
+.nav-btn .icon-link {
+    opacity: .7;
+}
+
+.nav-btn:hover .icon-link {
+    opacity: .99;
+}
+
+.icon-link {
+    width:            10px;
+    height:           10px;
+    background-image: url(../assets/link-white.svg);
+    position: absolute;
+    right: -14px;
+    top: 18px;
+}
+
+.icon-link-black {
+    width:            10px;
+    height:           10px;
+    background-image: url(../assets/link-black.svg);
+    position: absolute;
+    right: -14px;
+    top: 18px;
+}
+
+.techBox {
+    background-color: red;
+    height: 100%;
+}
+
+.gridBox {
+    float: left;
+    position: relative;
+    width: 200px;
+    padding-bottom: 200px;
+}
+
+.gridBoxInner {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #FFFFFF;
+    color: #8b8583;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .topBtn {
+        font-size: 9px;
+    }
+
+    .signBtn {
+        font-size: 9px;
+        padding: 3px 3px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .diagram {
+        width: 300px;
+    }
+
+    .techBox {
+        width: 300px;
+    }
+
+    .gridBox {
+        width: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .cryptoserver {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 700px) {
+
+    .diagram {
+        width: 500px;
+    }
+
+    .techBox {
+        width: 500px;
+    }
+
+    .gridBox {
+        width: 100px;
+        padding-bottom: 100px;
+    }
+
+    .cryptoserver {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+
+    .diagram {
+        width: 700px;
+    }
+
+    .techBox {
+        width: 700px;
+    }
+
+    .gridBox {
+        width: 100px;
+        padding-bottom: 100px;
+    }
+
+    .cryptoserver {
+        width: 700px;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+
+    .diagram {
+        width: 900px;
+    }
+
+    .techBox {
+        width: 900px;
+    }
+
+    .gridBox {
+        width: 100px;
+        padding-bottom: 100px;
+    }
+
+    .cryptoserver {
+        width: 900px;
+    }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1300px) {
+
+    .diagram {
+        width: 1100px;
+    }
+
+    .techBox {
+        width: 1100px;
+    }
+
+    .gridBox {
+        width: 200px;
+        padding-bottom: 200px;
+    }
+
+    .cryptoserver {
+        width: 1100px;
+    }
+}
+
+@media only screen and (min-width: 1301px) {
+
+    .diagram {
+        width: 1200px;
+    }
+
+    .techBox {
+        width: 1200px;
+    }
+
+    .gridBox {
+        width: 200px;
+        padding-bottom: 200px;
+    }
+
+    .cryptoserver {
+        width: 1200px;
+    }
+}
+
+
+
+
+
+
+
+

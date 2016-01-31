@@ -11,11 +11,13 @@
     <link rel="stylesheet" type="text/css" href="css/slider.css"/>
 </head>
     <body>
+    <a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; left: 0; top:0; z-index: 9000" src="assets/we-are-reactive-green-left.png"> </a>
         <header>
             <div style="display: table; width: 100%; height: 100%; padding-right: 20px">
                 <div class="topNavBar">
                     <button id="homeBtn" class="topBtn" style="margin-right: 0px">Home</button>
                     <button id="netBtn" class="topBtn" style="margin-right: 0px">Network Diagram</button>
+                    <button id="hsmBtn" class="topBtn">HSM</button>
                     <button id="stackBtn" class="topBtn">Technology</button>
                     <button id="galleryBtn" class="topBtn">Screenshots</button>
                     <button id="contributeBtn" class="topBtn">Contribute</button>
@@ -31,13 +33,12 @@
                 <div class="inside">
                     <span class="logo">bushido</span>
                     <p style="color: white; padding-top: 0px">Open Source initiative around Bitcoin security server side.</p>
-                    <!--<p style="color: white; padding-top: 10px">BIP32 Hierarchical - Deterministic Bitcoin wallet platform with HSM security.</p>-->
                     <div style="padding-top:20px">
                         <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
                             <img alt="Android app on Google Play" width="150px" src="assets/goog.png"/>
                         </a>
                     </div>
-                    <p style="color:#ffffff; padding-top: 20px">Web & Mobile Wallet | BIP32 Hierarchical - Deterministic | HSM Security | Developer API</p>
+                    <p style="color:#ffffff; padding-top: 20px">Web & Mobile Wallet &#183 BIP32 Hierarchical Deterministic &#183 HSM Security &#183 Developer API</p>
                 </div>
             </div>
             <div class="sponsorStripe">
@@ -50,7 +51,14 @@
         <section id="diagram" style="background-color: white">
             <div class="part">
                 <div class="inside">
-                    <img width="80%" src="assets/network.svg">
+                    <img id="diagramSvg" class="diagram" src="assets/network.svg">
+                </div>
+            </div>
+        </section>
+        <section id="hsm" style="background-color: #ffffff">
+            <div class="part">
+                <div class="inside">
+                    <img class="cryptoserver" src="assets/cryptoserver.png"/>
                 </div>
             </div>
         </section>
@@ -58,7 +66,7 @@
             <canvas id="canvas2" style="position:absolute; background-color: lightgrey"></canvas>
             <div class="part">
                 <div class="inside">
-                    <div style="background-color: red; width: 1000px; height: 100%">
+                    <div class="techBox">
                         <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Java</div></div>
                         <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">HTML</div></div>
                         <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Docker</div></div>
@@ -109,7 +117,7 @@
         </section>
         <footer id="contact" style="text-align: center">
             <p style="font-size: 12px">
-                Contact: <a class="nav-btn" style="color: black; padding-left: 5px;" href="mailto:bushido@riaforge.co.uk">bushido@riaforge.co.uk<i class="icon-link-black" style="color:black"></i></a>
+                Contact: <span class="nav-btn" style="color: black; padding-left: 5px;">bushido at riaforge.co.uk</span>
                 <span style="padding-left: 60px">Maintained by</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://www.robertjesionek.com" target="_blank">Robert Jesionek<i class="icon-link-black" style="color:black"></i></a>
                 <span style="padding-left: 60px">Twitter</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://twitter.com/bushidowallet" target="_blank">@bushidowallet<i class="icon-link-black" style="color:black"></i></a>
             </p>

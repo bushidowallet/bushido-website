@@ -90,28 +90,8 @@ section .part .inside {
     border: 1px solid white;
 }
 
-.gridBox {
-    float: left;
-    position: relative;
-    width: 200px;
-    padding-bottom: 200px;
-}
-
-.gridBoxInner {
-    background-color: rgba(255,255,255,0);
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    top: 10px;
-    bottom: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0px solid #FFFFFF;
-    color: #8b8583;
-    text-align: center;
-    border: 1px solid rgb(255,255,255);
+.diagram {
+    width: 80%;
 }
 
 .sponsorStripe {
@@ -281,4 +261,173 @@ a:hover {
     right: -14px;
     top: 18px;
 }
+
+.techBox {
+    background-color: red;
+   /* width: 1000px;*/
+    height: 100%;
+}
+
+.gridBox {
+    float: left;
+    position: relative;
+    width: 200px;
+    padding-bottom: 200px;
+}
+
+.gridBoxInner {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #FFFFFF;
+    color: #8b8583;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .topBtn {
+        font-size: 9px;
+    }
+
+    .signBtn {
+        font-size: 9px;
+        padding: 3px 3px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .diagram {
+        width: 300px;
+    }
+
+    .techBox {
+        width: 300px;
+    }
+
+    .gridBox {
+        width: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .cryptoserver {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 700px) {
+
+    .diagram {
+        width: 500px;
+    }
+
+    .techBox {
+        width: 500px;
+    }
+
+    .gridBox {
+        width: 100px;
+        padding-bottom: 100px;
+    }
+
+    .cryptoserver {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+
+    .diagram {
+        width: 700px;
+    }
+
+    .techBox {
+        width: 700px;
+    }
+
+    .gridBox {
+        width: 100px;
+        padding-bottom: 100px;
+    }
+
+    .cryptoserver {
+        width: 700px;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+
+    .diagram {
+        width: 900px;
+    }
+
+    .techBox {
+        width: 900px;
+    }
+
+    .gridBox {
+        width: 100px;
+        padding-bottom: 100px;
+    }
+
+    .cryptoserver {
+        width: 900px;
+    }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1300px) {
+
+    .diagram {
+        width: 1100px;
+    }
+
+    .techBox {
+        width: 1100px;
+    }
+
+    .gridBox {
+        width: 200px;
+        padding-bottom: 200px;
+    }
+
+    .cryptoserver {
+        width: 1100px;
+    }
+}
+
+@media only screen and (min-width: 1301px) {
+
+    .diagram {
+        width: 1200px;
+    }
+
+    .techBox {
+        width: 1200px;
+    }
+
+    .gridBox {
+        width: 200px;
+        padding-bottom: 200px;
+    }
+
+    .cryptoserver {
+        width: 1200px;
+    }
+}
+
+
+
+
+
+
+
 

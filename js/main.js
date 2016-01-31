@@ -52,6 +52,9 @@ function initNav() {
     $('#contactBtn').on('click', function(e) {
         open('contact');
     });
+    $('#hsmBtn').on('click', function(e) {
+        open('hsm');
+    });
     $('#signupBtn').on('click', function(e) {
         window.location = "https://app.bushidowallet.com/register.html";
     });

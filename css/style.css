@@ -94,6 +94,12 @@ section .part .inside {
     width: 80%;
 }
 
+.mainLbl {
+    color: white;
+    padding-top: 0px;
+    font-size: 18px;
+}
+
 .sponsorStripe {
     background-color: #ffffff;
     width: 100%;
@@ -291,6 +297,13 @@ a:hover {
     border: 1px solid rgb(255, 255, 255);
 }
 
+@media only screen and (max-width: 1150px) {
+
+    header {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1023px) {
 
     .topBtn {
@@ -301,6 +314,7 @@ a:hover {
         font-size: 9px;
         padding: 3px 3px;
     }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -314,8 +328,8 @@ a:hover {
     }
 
     .gridBox {
-        width: 100px;
-        padding-bottom: 100px;
+        width: 150px;
+        padding-bottom: 150px;
     }
     
     .cryptoserver {
@@ -334,8 +348,8 @@ a:hover {
     }
 
     .gridBox {
-        width: 100px;
-        padding-bottom: 100px;
+        width: 150px;
+        padding-bottom: 150px;
     }
 
     .cryptoserver {
@@ -354,8 +368,8 @@ a:hover {
     }
 
     .gridBox {
-        width: 100px;
-        padding-bottom: 100px;
+        width: 150px;
+        padding-bottom: 150px;
     }
 
     .cryptoserver {
@@ -374,12 +388,16 @@ a:hover {
     }
 
     .gridBox {
-        width: 100px;
-        padding-bottom: 100px;
+        width: 150px;
+        padding-bottom: 150px;
     }
 
     .cryptoserver {
         width: 900px;
+    }
+
+    section .part {
+        padding-top: 0px;
     }
 }
 

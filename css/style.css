@@ -114,7 +114,6 @@ section .part .inside {
     display: table-cell;
     vertical-align: middle;
     text-align: right;
-
 }
 
 .topBtn
@@ -268,6 +267,15 @@ a:hover {
     top: 18px;
 }
 
+.icon-link-blue {
+    width:            10px;
+    height:           10px;
+    background-image: url(../assets/link-blue.svg);
+    position: absolute;
+    right: -14px;
+    top: -2px;
+}
+
 .techBox {
     background-color: red;
     height: 100%;
@@ -295,6 +303,12 @@ a:hover {
     color: #8b8583;
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
+}
+
+.credit-txt {
+    color: rgb(9,120,184);
+    padding: 0px 0px 0px 20px;
+    font-size: 13px;
 }
 
 @media only screen and (max-width: 1150px) {

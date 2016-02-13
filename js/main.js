@@ -48,6 +48,9 @@ function initNav() {
     $('#galleryBtn').on('click', function(e) {
         open('gallery');
     });
+    $('#creditsBtn').on('click', function(e) {
+        open('credits');
+    });
     $('#contributeBtn').on('click', function(e) {
         open('contribute');
     });

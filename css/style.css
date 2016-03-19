@@ -17,6 +17,48 @@ header {
     height: 100px;
 }
 
+.sliderNavBar
+{
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 29px;
+    width: 100%;
+    z-index: 99;
+    display: none;
+}
+
+.sliderNavBar button {
+    font-size: 20px;
+    width: 55px;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    border-radius: 0px;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    outline:0;
+    padding: 8px 16px;
+    background:rgba(255,87,20,1);
+    background: 0 0;
+    -webkit-transition: color .5s linear, background-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out;
+    border:2px solid rgb(9,120,184);
+}
+
+.sliderNavBar button:hover {
+    font-size: 20px;
+    background:rgba(255,255,255,1);
+    color: rgba(9,120,184, 1);
+    -webkit-transition: color .5s, background-color .5s ease-in-out;
+    -moz-transition: color .5s, background-color .5s ease-in-out;
+    -o-transition: color .5s, background-color .5s ease-in-out;
+    transition: color .5s, background-color .5s ease-in-out;
+    border:2px solid rgb(9,120,184);
+}
+
 a {
     color: black;
 }

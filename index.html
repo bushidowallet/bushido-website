@@ -9,11 +9,14 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="css/slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css"/>
 </head>
     <body>
-    <a target="_blank" href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; left: 0; top:0; z-index: 9000" src="assets/we-are-reactive-orange-left.png"> </a>
-        <header>
-            <div style="display: table; width: 100%; height: 100%; padding-right: 20px">
+    <div id="container">
+    <!--<a target="_blank" href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; left: 0; top:0; z-index: 9000" src="assets/we-are-reactive-orange-left.png"> </a>-->
+        <a target="_blank" href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; left: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-white-left.png"> </a>
+        <header id="header">
+            <div style="display: table; width: 100%; height: 100%; padding-left: 20px; padding-right: 20px">
                 <div class="topNavBar">
                     <button id="homeBtn" class="topBtn" style="margin-right: 0px">Home</button>
                     <button id="netBtn" class="topBtn" style="margin-right: 0px">Network Diagram</button>
@@ -26,26 +29,33 @@
                     <button id="signupBtn" class="signBtn">Sign Up</button>
                     <button id="signinBtn" class="signBtn">Sign In</button>
                 </div>
+                <div id="sliderNav" class="sliderNavBar">
+                    <button class="mdi mdi-chevron-left" id="prevSlideBtn"></button>
+                    <button class="mdi mdi-close" id="closeSliderBtn"></button>
+                    <button class="mdi mdi-chevron-right" id="nextSlideBtn"></button>
+                </div>
             </div>
         </header>
         <section id="home">
-            <canvas id="canvas" style="position:absolute; background-color: lightgrey"></canvas>
-            <div class="part" style="padding-top: 0px">
-                <div class="inside">
-                    <img id="logoSvg" src="assets/logo.svg">
-                    <p class="mainLbl" style="margin-top: 60px">Open Source initiative around Bitcoin security server side.</p>
-                    <div style="padding-top:20px">
-                        <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
-                            <img alt="Android app on Google Play" width="150px" src="assets/goog.png"/>
-                        </a>
+            <div style="width: 100%; height: 100%">
+                <canvas id="canvas" style="position:absolute; background-color: lightgrey"></canvas>
+                <div class="part" style="padding-top: 0px">
+                    <div class="inside">
+                        <img id="logoSvg" src="assets/logo.svg">
+                        <p class="mainLbl" style="margin-top: 60px">Open Source initiative around Bitcoin security server side.</p>
+                        <div style="padding-top:20px">
+                            <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
+                                <img alt="Android app on Google Play" width="150px" src="assets/goog.png"/>
+                            </a>
+                        </div>
+                        <p class="mainLbl" style="padding-top: 15px">Web & Mobile wallet &#183 BIP32 Hierarchical Deterministic core &#183 HSM Security &#183 2FA &#183 Developer API</p>
                     </div>
-                    <p class="mainLbl" style="padding-top: 15px">Web & Mobile wallet &#183 BIP32 Hierarchical Deterministic core &#183 HSM Security &#183 2FA &#183 Developer API</p>
                 </div>
-            </div>
-            <div class="sponsorStripe">
-                <p class="f" style="color:white; position:absolute; top: -33px; left: 20px">VISIT SUPPORTERS</p>
-                <div style="width: 100%; display: table-cell; vertical-align: middle; background-color: white; text-align: center">
-                    <a href="http://www.utimaco.com" target="_blank"><img width="150px" src="assets/utimaco.png"/></a>
+                <div class="sponsorStripe">
+                    <p class="f" style="color:white; position:absolute; top: -33px; left: 20px">VISIT SUPPORTERS</p>
+                    <div style="width: 100%; display: table-cell; vertical-align: middle; background-color: white; text-align: center">
+                        <a href="http://www.utimaco.com" target="_blank"><img width="150px" src="assets/utimaco.png"/></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -64,42 +74,27 @@
             </div>
         </section>
         <section id="stacks" style="background-color: grey">
-            <canvas id="canvas2" style="position:absolute; background-color: lightgrey"></canvas>
-            <div class="part">
-                <div class="inside">
-                    <div class="techBox">
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 10px; max-width: 100%; max-height: 100%" src="assets/java.png"/></div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">HTML</div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/docker.png"/></div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">CSS</div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/js_s.png"/></div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Utimaco CryptoServer</div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/android_s.jpg"/></div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/nodejs.png"/></div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">SSL</div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Bitcoin</div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/mongodb_s.png"/></div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 20px; max-width: 100%; max-height: 100%" src="assets/rabbitmq.png"/></div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/nginx.png"/></div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Spring Boot</div></div>
-                        <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff;background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/angularjs_s.png"/></div></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="gallery" style="background-color: white;">
-            <canvas id="canvas4" style="position:absolute; background-color: lightgrey"></canvas>
-            <div id="wrapper" style="padding-top: 100px; height: 100%; width: 100%; overflow: auto; -webkit-overflow-scrolling: touch;">
-                <div class="sliderContainer">
-                    <div id="innerContainer">
-                        <div class="slide" onfocus="this.blur();" id="slide2"><img class="sliderImg" src="assets/bushido/bushido_mobile_s.png"/></div>
-                        <div class="slide" onfocus="this.blur();" id="slide3"><img class="sliderImg" src="assets/bushido/receive_s.png"/></div>
-                        <div class="slide" onfocus="this.blur();" id="slide4"><img class="sliderImg" src="assets/bushido/keys_s.png"/></div>
-                        <div class="slide" onfocus="this.blur();" id="slide5"><img class="sliderImg" src="assets/bushido/wallet_s.png"/></div>
-                        <div class="slide" onfocus="this.blur();" id="slide6"><img class="sliderImg" src="assets/bushido/checkout_keypad_cropped.png"/></div>
-                        <div class="slide" onfocus="this.blur();" id="slide7"><img class="sliderImg" src="assets/bushido/checkout_awaiting_cropped.png"/></div>
-                        <div class="slide" onfocus="this.blur();" id="slide8"><img class="sliderImg" src="assets/bushido/analytics_s.png"/></div>
-                        <div class="slide" onfocus="this.blur();" id="slide10"><img class="sliderImg" src="assets/bushido/bushido_checkout_s.jpg"/></div>
+            <div style="width: 100%; height: 100%">
+                <canvas id="canvas2" style="position:absolute; background-color: lightgrey"></canvas>
+                <div class="part">
+                    <div class="inside">
+                        <div class="techBox">
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 10px; max-width: 100%; max-height: 100%" src="assets/java.png"/></div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">HTML</div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/docker.png"/></div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">CSS</div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/js_s.png"/></div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Utimaco CryptoServer</div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/android_s.jpg"/></div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/nodejs.png"/></div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">SSL</div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Bitcoin</div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/mongodb_s.png"/></div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 20px; max-width: 100%; max-height: 100%" src="assets/rabbitmq.png"/></div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/nginx.png"/></div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff">Spring Boot</div></div>
+                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff;background-color: white;"><img style="padding: 30px; max-width: 100%; max-height: 100%" src="assets/angularjs_s.png"/></div></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,15 +123,17 @@
             </div>
         </section>
         <section id="contribute">
-            <canvas id="canvas3" style="position:absolute; background-color: lightgrey"></canvas>
-            <div class="part">
-                <div class="inside">
-                    <p style="color: white">Bushido is open source software. Contributors are welcome.</p>
-                    <p>
-                        <a class="nav-btn" style="padding-bottom: 0px" href="http://github.com/bushidowallet" target="_blank" title="Source code at GitHub">View the source code<i class="icon-link"></i></a></br>
-                        <a class="nav-btn" style="padding-bottom: 0px" href="https://github.com/bushidowallet/bushido-doc" target="_blank" title="Setting up development environment">Set up development environment<i class="icon-link"></i></a></br>
-                        <a class="nav-btn" style="padding-bottom: 0px" href="https://gitter.im/bushidowallet/bushido-doc" target="_blank" title="Chat on Gitter">Chat on Gitter<i class="icon-link"></i></a>
-                    </p>
+            <div style="width: 100%; height: 100%">
+                <canvas id="canvas3" style="position:absolute; background-color: lightgrey"></canvas>
+                <div class="part">
+                    <div class="inside">
+                        <p style="color: white">Bushido is open source software. Contributors are welcome.</p>
+                        <p>
+                            <a class="nav-btn" style="padding-bottom: 0px" href="http://github.com/bushidowallet" target="_blank" title="Source code at GitHub">View the source code<i class="icon-link"></i></a></br>
+                            <a class="nav-btn" style="padding-bottom: 0px" href="https://github.com/bushidowallet/bushido-doc" target="_blank" title="Setting up development environment">Set up development environment<i class="icon-link"></i></a></br>
+                            <a class="nav-btn" style="padding-bottom: 0px" href="https://gitter.im/bushidowallet/bushido-doc" target="_blank" title="Chat on Gitter">Chat on Gitter<i class="icon-link"></i></a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -147,6 +144,7 @@
                 <span style="padding-left: 60px">Twitter</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://twitter.com/bushidowallet" target="_blank">@bushidowallet<i class="icon-link-black" style="color:black"></i></a>
             </p>
         </footer>
+        </div>
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script type="text/javascript" src="js/slider.js"></script>

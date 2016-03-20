@@ -5,6 +5,10 @@ body, html {
     -webkit-font-smoothing: antialiased;
 }
 
+body {
+    background: #fff;
+}
+
 header {
     border-bottom: 1px solid #cacaca;
     right: 0;

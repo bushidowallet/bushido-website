@@ -40,7 +40,6 @@ function initSlider() {
         centerPadding: '60px',
         slidesToShow: 3,
         arrows: false,
-        dots: true,
         variableWidth: true,
         responsive: [
             {
@@ -55,7 +54,7 @@ function initSlider() {
             {
                 breakpoint: 600,
                 settings: {
-                    arrows: true,
+                    arrows: false,
                     centerMode: true,
                     centerPadding: '40px',
                     slidesToShow: 1
@@ -64,8 +63,9 @@ function initSlider() {
         ]
     });
 
-    var ch = $('.sliderContainer').height();
-    var tx = (ch - 500) / 2;
+    var ch = $(window).height();
+    console.log('ch: ' + ch);
+    var tx = (ch - 500 - 103 ) / 2;
     $('#innerContainer').css({'top': tx});
 }
 

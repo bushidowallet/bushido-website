@@ -28,6 +28,8 @@ header {
 
 .cnv {
     position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .diagramSection {

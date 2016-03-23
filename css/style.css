@@ -21,7 +21,15 @@ header {
     height: 100px;
 }
 
+.cnv {
+    position: absolute;
+}
+
 .diagramSection {
+    background-color: #FFFFFF;
+}
+
+.creditsSection {
     background-color: #FFFFFF;
 }
 
@@ -156,10 +164,23 @@ section .part .inside {
     width: 80%;
 }
 
+.googLink {
+    margin-top: 20px;
+}
+
 .mainLbl {
     color: white;
     padding-top: 0px;
     font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+.descLbl {
+    color: white;
+    padding-top: 0px;
+    font-size: 18px;
+    margin-top: 35px;
 }
 
 .sponsorStripe {

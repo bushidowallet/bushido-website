@@ -37,17 +37,15 @@
         </header>
         <section id="home">
             <div style="width: 100%; height: 100%">
-                <canvas id="canvas" style="position:absolute; left: 0; top: 0; background-color: lightgrey;"></canvas>
-                <div class="part" style="padding-top: 0px">
+                <canvas class="cnv" id="canvas"></canvas>
+                <div class="part">
                     <div class="inside">
                         <img id="logoSvg" src="assets/logo.svg">
-                        <p class="mainLbl" style="margin-top: 60px">Open Source initiative around Bitcoin security server side.</p>
-                        <div style="padding-top:20px">
-                            <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
-                                <img alt="Android app on Google Play" width="150px" src="assets/goog.png"/>
-                            </a>
-                        </div>
-                        <p class="mainLbl" style="padding-top: 15px">Web & Mobile wallet &#183 BIP32 Hierarchical Deterministic core &#183 HSM Security &#183 2FA &#183 Developer API</p>
+                        <p class="mainLbl">Open Source initiative around Bitcoin security server side.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
+                            <img alt="Android app on Google Play" width="150px" src="assets/goog.png"/>
+                        </a>
+                        <p class="descLbl">Web & Mobile wallet &#183 BIP32 Hierarchical Deterministic core &#183 HSM Security &#183 2FA &#183 Developer API</p>
                     </div>
                 </div>
                 <div class="sponsorStripe">
@@ -73,7 +71,7 @@
             </div>
         </section>
         <section id="stacks">
-            <canvas id="canvas2" style="position:absolute; left: 0; top: 0; background-color: lightgrey"></canvas>
+            <canvas id="canvas2" class="cnv"></canvas>
             <div class="part">
                 <div class="inside">
                     <div class="techBox">
@@ -94,9 +92,9 @@
                 </div>
             </div>
         </section>
-        <section id="credits">
+        <section id="credits" class="creditsSection">
             <div class="part">
-                <div class="inside" style="background-color: white">
+                <div class="inside">
                     <p class="creditHeadingTxt">Credits go to the following people and projects for code influenced by or used directly.</p>
                     <p>
                         <span class="credit-txt">Apache Commons</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="https://commons.apache.org/" target="_blank">https://commons.apache.org/<i class="icon-link-blue"></i></a></br>

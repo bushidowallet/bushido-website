@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B';
     -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -19,6 +20,37 @@ header {
     z-index: 9;
     background-color: #cacaca;
     height: 100px;
+}
+
+.fdiv {
+    width: 100%;
+    height: 100%;
+}
+
+.cnv {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.diagramSection {
+    background-color: #FFFFFF;
+}
+
+.creditsSection {
+    background-color: #FFFFFF;
+}
+
+.hsmSection {
+    background-color: #FFFFFF;
+}
+
+header div {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .sliderNavBar
@@ -140,10 +172,23 @@ section .part .inside {
     width: 80%;
 }
 
+.googLink {
+    margin-top: 20px;
+}
+
 .mainLbl {
     color: white;
     padding-top: 0px;
     font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+.descLbl {
+    color: white;
+    padding-top: 0px;
+    font-size: 18px;
+    margin-top: 35px;
 }
 
 .sponsorStripe {
@@ -153,6 +198,14 @@ section .part .inside {
     height: 100px;
     position:absolute;
     display: table;
+}
+
+.sStripe {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: white;
+    text-align: center;
 }
 
 .topNavBar {
@@ -244,6 +297,10 @@ button,input
     font-family: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
     font-size: 11px;
     letter-spacing: 5px;
+    color:white;
+    position:absolute;
+    top: -33px;
+    left: 20px;
 }
 
 .slider {
@@ -265,13 +322,54 @@ a:hover {
     text-decoration: none;
 }
 
+.osText {
+    color: #FFFFFF;
+}
+
+.contactTxt {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.c-item {
+    padding: 0px 0 0px 0px;
+    font-size: 13px;
+    color: rgb(9,120,184);
+    opacity: .5;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.c-item:hover {
+    opacity: 1;
+    color: rgb(9,120,184);
+}
+
+.c-item--highlight {
+    opacity: 1;
+}
+
+.c-item--highlight:hover {
+
+}
+
+.c-item .icon-link {
+    opacity: .7;
+}
+
+.c-item:hover .icon-link {
+    opacity: .99;
+}
+
 .nav-btn {
-    color: #fff;
+    color: #FFFFFF;
     opacity: .5;
     text-decoration: none;
     font-size: 1.25em;
     display: inline-block;
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 0px 20px;
     position: relative;
 }
 
@@ -335,7 +433,8 @@ a:hover {
 }
 
 .gridBoxInner {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 1);
+    color: #ffffff;
     position: absolute;
     left: 10px;
     right: 10px;
@@ -345,16 +444,25 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px solid #FFFFFF;
     color: #8b8583;
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
+}
+
+.creditHeadingTxt {
+    color: rgb(9,120,184);
 }
 
 .credit-txt {
     color: rgb(9,120,184);
     padding: 0px 0px 0px 20px;
     font-size: 13px;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    display: block;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -391,6 +499,11 @@ a:hover {
         width: 150px;
         padding-bottom: 150px;
     }
+
+    .img {
+        max-width: 128px;
+        max-height: 128px;
+    }
     
     .cryptoserver {
         width: 300px;
@@ -410,6 +523,11 @@ a:hover {
     .gridBox {
         width: 150px;
         padding-bottom: 150px;
+    }
+
+    .img {
+        max-width: 128px;
+        max-height: 128px;
     }
 
     .cryptoserver {
@@ -432,6 +550,11 @@ a:hover {
         padding-bottom: 150px;
     }
 
+    .img {
+        max-width: 128px;
+        max-height: 128px;
+    }
+
     .cryptoserver {
         width: 700px;
     }
@@ -450,6 +573,11 @@ a:hover {
     .gridBox {
         width: 150px;
         padding-bottom: 150px;
+    }
+
+    .img {
+        max-width: 128px;
+        max-height: 128px;
     }
 
     .cryptoserver {
@@ -476,6 +604,11 @@ a:hover {
         padding-bottom: 200px;
     }
 
+    .img {
+        max-width: 178px;
+        max-height: 178px;
+    }
+
     .cryptoserver {
         width: 1100px;
     }
@@ -494,6 +627,11 @@ a:hover {
     .gridBox {
         width: 200px;
         padding-bottom: 200px;
+    }
+
+    .img {
+        max-width: 178px;
+        max-height: 178px;
     }
 
     .cryptoserver {

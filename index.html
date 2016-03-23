@@ -15,10 +15,10 @@
     <div id="container">
         <a target="_blank" href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; left: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-white-left.png"> </a>
         <header id="header">
-            <div style="display: table; width: 100%; height: 100%; padding-left: 20px; padding-right: 20px">
+            <div>
                 <div class="topNavBar">
-                    <button id="homeBtn" class="topBtn" style="margin-right: 0px">Home</button>
-                    <button id="netBtn" class="topBtn" style="margin-right: 0px">Network Diagram</button>
+                    <button id="homeBtn" class="topBtn">Home</button>
+                    <button id="netBtn" class="topBtn">Network Diagram</button>
                     <button id="hsmBtn" class="topBtn">HSM</button>
                     <button id="stackBtn" class="topBtn">Technology</button>
                     <button id="galleryBtn" class="topBtn">Screenshots</button>
@@ -36,109 +36,105 @@
             </div>
         </header>
         <section id="home">
-            <div style="width: 100%; height: 100%">
-                <canvas id="canvas" style="position:absolute; left: 0; top: 0; background-color: lightgrey;"></canvas>
-                <div class="part" style="padding-top: 0px">
+            <div class="fdiv">
+                <canvas class="cnv" id="canvas"></canvas>
+                <div class="part">
                     <div class="inside">
                         <img id="logoSvg" src="assets/logo.svg">
-                        <p class="mainLbl" style="margin-top: 60px">Open Source initiative around Bitcoin security server side.</p>
-                        <div style="padding-top:20px">
-                            <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
-                                <img alt="Android app on Google Play" width="150px" src="assets/goog.png"/>
-                            </a>
-                        </div>
-                        <p class="mainLbl" style="padding-top: 15px">Web & Mobile wallet &#183 BIP32 Hierarchical Deterministic core &#183 HSM Security &#183 2FA &#183 Developer API</p>
+                        <p class="mainLbl">Open Source initiative around Bitcoin security server side.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.bitcoin.blockchain.api.android" target="_blank">
+                            <img alt="Android app on Google Play" width="150px" src="assets/goog.png"/>
+                        </a>
+                        <p class="descLbl">Web & Mobile wallet &#183 BIP32 Hierarchical Deterministic core &#183 HSM Security &#183 2FA &#183 Developer API</p>
                     </div>
                 </div>
                 <div class="sponsorStripe">
-                    <p class="f" style="color:white; position:absolute; top: -33px; left: 20px">VISIT SUPPORTERS</p>
-                    <div style="width: 100%; display: table-cell; vertical-align: middle; background-color: white; text-align: center">
+                    <p class="f">VISIT SUPPORTERS</p>
+                    <div class="sStripe">
                         <a href="http://www.utimaco.com" target="_blank"><img width="150px" src="assets/utimaco.png"/></a>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="diagram" style="background-color: white">
+        <section class="diagramSection" id="diagram">
             <div class="part">
                 <div class="inside">
                     <img id="diagramSvg" class="diagram" src="assets/network.jpg">
                 </div>
             </div>
         </section>
-        <section id="hsm" style="background-color: #ffffff">
+        <section class="hsmSection" id="hsm">
             <div class="part">
                 <div class="inside">
                     <img class="cryptoserver" src="assets/cryptoserver.jpg"/>
                 </div>
             </div>
         </section>
-        <section id="stacks" style="background-color: grey">
-            <div style="width: 100%; height: 100%">
-                <canvas id="canvas2" style="position:absolute; left: 0; top: 0; background-color: lightgrey"></canvas>
-                <div class="part">
-                    <div class="inside">
-                        <div class="techBox">
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/bitcoin_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/html5_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/docker_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/css3_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/js_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/android.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/nodejs.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/java.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/mongodb_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/rabbitmq.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/nginx.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/spring_boot.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/angular_js.jpg"/></div></div>
-                        </div>
+        <section id="stacks">
+            <canvas id="canvas2" class="cnv"></canvas>
+            <div class="part">
+                <div class="inside">
+                    <div class="techBox">
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/bitcoin_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/html5_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/docker_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/css3_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/js_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/android.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/nodejs.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/java.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/mongodb_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/rabbitmq.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/nginx.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/spring_boot.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/angular_js.jpg"/></div></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="credits">
+        <section id="credits" class="creditsSection">
             <div class="part">
-                <div class="inside" style="background-color: white">
-                    <p style="color: rgb(9,120,184);">Credits go to the following people and projects for code influenced by or used directly.</p>
+                <div class="inside">
+                    <p class="creditHeadingTxt">Credits go to the following people and projects for code influenced by or used directly.</p>
                     <p>
-                        <span class="credit-txt">Apache Commons</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="https://commons.apache.org/" target="_blank">https://commons.apache.org/<i class="icon-link-blue"></i></a></br>
-                        <span class="credit-txt">BCCAPI</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="http://code.google.com/p/bccapi/" target="_blank">http://code.google.com/p/bccapi<i class="icon-link-blue"></i></a></br>
-                        <span class="credit-txt">BitcoinJ</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="https://bitcoinj.github.io/" target="_blank">https://bitcoinj.github.io/<i class="icon-link-blue"></i></a></br>
-                        <span class="credit-txt">Bitcore</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="https://github.com/bitpay/bitcore-lib" target="_blank">https://github.com/bitpay/bitcore-lib<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">Apache Commons</span> <a class="c-item" href="https://commons.apache.org/" target="_blank">https://commons.apache.org/<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">BCCAPI</span> <a class="c-item" href="http://code.google.com/p/bccapi/" target="_blank">http://code.google.com/p/bccapi<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">BitcoinJ</span> <a class="c-item" href="https://bitcoinj.github.io/" target="_blank">https://bitcoinj.github.io/<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">Bitcore</span> <a class="c-item" href="https://github.com/bitpay/bitcore-lib" target="_blank">https://github.com/bitpay/bitcore-lib<i class="icon-link-blue"></i></a></br>
                         <span class="credit-txt">Brian Turek</span></br>
-                        <span class="credit-txt">Crypto-JS</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="http://code.google.com/p/crypto-js/" target="_blank">http://code.google.com/p/crypto-js/<i class="icon-link-blue"></i></a></br>
-                        <span class="credit-txt">Kazuhiko Arase</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="http://www.d-project.com" target="_blank">http://www.d-project.com<i class="icon-link-blue"></i></a></br>
-                        <span class="credit-txt">Mikołaj Szarafiński - logo design</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="mailto:msgraficzny@gmail.com" target="_blank">msgraficzny@gmail.com<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">Crypto-JS</span> <a class="c-item" href="http://code.google.com/p/crypto-js/" target="_blank">http://code.google.com/p/crypto-js/<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">Kazuhiko Arase</span> <a class="c-item" href="http://www.d-project.com" target="_blank">http://www.d-project.com<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">Mikołaj Szarafiński - logo design</span> <a class="c-item" href="mailto:msgraficzny@gmail.com" target="_blank">msgraficzny@gmail.com<i class="icon-link-blue"></i></a></br>
                         <span class="credit-txt">Paul Johnston</span></br>
-                        <span class="credit-txt">Swagger</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="http://swagger.io/" target="_blank">http://swagger.io/<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">Swagger</span> <a class="c-item" href="http://swagger.io/" target="_blank">http://swagger.io/<i class="icon-link-blue"></i></a></br>
                         <span class="credit-txt">Tamas Blummer</span></br>
-                        <span class="credit-txt">The Legion of the Bouncy Castle</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="http://www.bouncycastle.org/" target="_blank">http://www.bouncycastle.org<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">The Legion of the Bouncy Castle</span> <a class="c-item" href="http://www.bouncycastle.org/" target="_blank">http://www.bouncycastle.org<i class="icon-link-blue"></i></a></br>
                         <span class="credit-txt">Tom Wu</span></br>
-                        <span class="credit-txt">ZXing Project</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="https://github.com/zxing" target="_blank">https://github.com/zxing<i class="icon-link-blue"></i></a></br>
+                        <span class="credit-txt">ZXing Project</span> <a class="c-item" href="https://github.com/zxing" target="_blank">https://github.com/zxing<i class="icon-link-blue"></i></a></br>
                     </p>
                 </div>
             </div>
         </section>
         <section id="contribute">
-            <div style="width: 100%; height: 100%">
-                <canvas id="canvas3" style="position:absolute; left: 0; top: 0; background-color: lightgrey"></canvas>
+            <div class="fdiv">
+                <canvas class="cnv" id="canvas3"></canvas>
                 <div class="part">
                     <div class="inside">
-                        <p style="color: white">Bushido is open source software. Contributors are welcome.</p>
+                        <p class="osText">Bushido is open source software. Contributors are welcome.</p>
                         <p>
-                            <a class="nav-btn" style="padding-bottom: 0px" href="http://github.com/bushidowallet" target="_blank" title="Source code at GitHub">View the source code<i class="icon-link"></i></a></br>
-                            <a class="nav-btn" style="padding-bottom: 0px" href="https://github.com/bushidowallet/bushido-doc" target="_blank" title="Setting up development environment">Set up development environment<i class="icon-link"></i></a></br>
-                            <a class="nav-btn" style="padding-bottom: 0px" href="https://gitter.im/bushidowallet/bushido-doc" target="_blank" title="Chat on Gitter">Chat on Gitter<i class="icon-link"></i></a>
+                            <a class="nav-btn" href="http://github.com/bushidowallet" target="_blank" title="Source code at GitHub">View the source code<i class="icon-link"></i></a></br>
+                            <a class="nav-btn" href="https://github.com/bushidowallet/bushido-doc" target="_blank" title="Setting up development environment">Set up development environment<i class="icon-link"></i></a></br>
+                            <a class="nav-btn" href="https://gitter.im/bushidowallet/bushido-doc" target="_blank" title="Chat on Gitter">Chat on Gitter<i class="icon-link"></i></a>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <footer id="contact" style="text-align: center">
-            <p style="font-size: 12px">
+        <footer id="contact">
+            <p class="contactTxt">
                 Contact: <span class="nav-btn" style="color: black; padding-left: 5px;">bushido at riaforge.co.uk</span>
-                <span style="padding-left: 60px">Maintained by</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://www.robertjesionek.com" target="_blank">Robert Jesionek<i class="icon-link-black" style="color:black"></i></a>
-                <span style="padding-left: 60px">Twitter</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://twitter.com/bushidowallet" target="_blank">@bushidowallet<i class="icon-link-black" style="color:black"></i></a>
+                <span style="margin-left: 60px">Maintained by</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://www.robertjesionek.com" target="_blank">Robert Jesionek<i class="icon-link-black" style="color:black"></i></a>
+                <span style="margin-left: 60px">Twitter</span><a class="nav-btn" style="color: black; padding-left: 5px" href="http://twitter.com/bushidowallet" target="_blank">@bushidowallet<i class="icon-link-black" style="color:black"></i></a>
             </p>
         </footer>
         </div>

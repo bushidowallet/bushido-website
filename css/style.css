@@ -21,6 +21,11 @@ header {
     height: 100px;
 }
 
+.fdiv {
+    width: 100%;
+    height: 100%;
+}
+
 .cnv {
     position: absolute;
 }
@@ -302,15 +307,24 @@ a:hover {
     text-decoration: none;
 }
 
+.osText {
+    color: #FFFFFF;
+}
+
+.contactTxt {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
 .nav-btn {
-    color: #fff;
+    color: #FFFFFF;
     opacity: .5;
     text-decoration: none;
     font-size: 1.25em;
     display: inline-block;
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 0px 20px;
     position: relative;
-
 }
 
 .nav-btn:hover {

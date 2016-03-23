@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B';
     -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -199,6 +200,14 @@ section .part .inside {
     display: table;
 }
 
+.sStripe {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: white;
+    text-align: center;
+}
+
 .topNavBar {
     height: 100%;
     display: table-cell;
@@ -288,6 +297,10 @@ button,input
     font-family: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
     font-size: 11px;
     letter-spacing: 5px;
+    color:white;
+    position:absolute;
+    top: -33px;
+    left: 20px;
 }
 
 .slider {
@@ -317,6 +330,37 @@ a:hover {
     text-align: center;
     font-size: 12px;
     padding-bottom: 20px;
+}
+
+.c-item {
+    padding: 0px 0 0px 0px;
+    font-size: 13px;
+    color: rgb(9,120,184);
+    opacity: .5;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.c-item:hover {
+    opacity: 1;
+    color: rgb(9,120,184);
+}
+
+.c-item--highlight {
+    opacity: 1;
+}
+
+.c-item--highlight:hover {
+
+}
+
+.c-item .icon-link {
+    opacity: .7;
+}
+
+.c-item:hover .icon-link {
+    opacity: .99;
 }
 
 .nav-btn {

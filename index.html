@@ -15,10 +15,10 @@
     <div id="container">
         <a target="_blank" href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; left: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-white-left.png"> </a>
         <header id="header">
-            <div style="display: table; width: 100%; height: 100%; padding-left: 20px; padding-right: 20px">
+            <div>
                 <div class="topNavBar">
-                    <button id="homeBtn" class="topBtn" style="margin-right: 0px">Home</button>
-                    <button id="netBtn" class="topBtn" style="margin-right: 0px">Network Diagram</button>
+                    <button id="homeBtn" class="topBtn">Home</button>
+                    <button id="netBtn" class="topBtn">Network Diagram</button>
                     <button id="hsmBtn" class="topBtn">HSM</button>
                     <button id="stackBtn" class="topBtn">Technology</button>
                     <button id="galleryBtn" class="topBtn">Screenshots</button>
@@ -58,40 +58,38 @@
                 </div>
             </div>
         </section>
-        <section id="diagram" style="background-color: white">
+        <section class="diagramSection" id="diagram">
             <div class="part">
                 <div class="inside">
                     <img id="diagramSvg" class="diagram" src="assets/network.jpg">
                 </div>
             </div>
         </section>
-        <section id="hsm" style="background-color: #ffffff">
+        <section class="hsmSection" id="hsm">
             <div class="part">
                 <div class="inside">
                     <img class="cryptoserver" src="assets/cryptoserver.jpg"/>
                 </div>
             </div>
         </section>
-        <section id="stacks" style="background-color: grey">
-            <div style="width: 100%; height: 100%">
-                <canvas id="canvas2" style="position:absolute; left: 0; top: 0; background-color: lightgrey"></canvas>
-                <div class="part">
-                    <div class="inside">
-                        <div class="techBox">
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/bitcoin_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/html5_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/docker_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/css3_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/js_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/android.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/nodejs.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/java.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/mongodb_s.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/rabbitmq.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/nginx.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/spring_boot.jpg"/></div></div>
-                            <div class="gridBox"><div class="gridBoxInner" style="color: #ffffff; background-color: white;"><img src="assets/angular_js.jpg"/></div></div>
-                        </div>
+        <section id="stacks">
+            <canvas id="canvas2" style="position:absolute; left: 0; top: 0; background-color: lightgrey"></canvas>
+            <div class="part">
+                <div class="inside">
+                    <div class="techBox">
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/bitcoin_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/html5_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/docker_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/css3_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/js_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/android.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/nodejs.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/java.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/mongodb_s.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/rabbitmq.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/nginx.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/spring_boot.jpg"/></div></div>
+                        <div class="gridBox"><div class="gridBoxInner"><img class="img" src="assets/angular_js.jpg"/></div></div>
                     </div>
                 </div>
             </div>
@@ -99,7 +97,7 @@
         <section id="credits">
             <div class="part">
                 <div class="inside" style="background-color: white">
-                    <p style="color: rgb(9,120,184);">Credits go to the following people and projects for code influenced by or used directly.</p>
+                    <p class="creditHeadingTxt">Credits go to the following people and projects for code influenced by or used directly.</p>
                     <p>
                         <span class="credit-txt">Apache Commons</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="https://commons.apache.org/" target="_blank">https://commons.apache.org/<i class="icon-link-blue"></i></a></br>
                         <span class="credit-txt">BCCAPI</span> <a class="nav-btn" style="padding: 0px 0 0px 0px; font-size: 13px; color: rgb(9,120,184);" href="http://code.google.com/p/bccapi/" target="_blank">http://code.google.com/p/bccapi<i class="icon-link-blue"></i></a></br>
